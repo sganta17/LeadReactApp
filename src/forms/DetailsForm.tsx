@@ -30,7 +30,7 @@ const DetailsForm = () => {
                         <div style={details.client == 'mass' ? {} : details.client == 'mmbu' ? { backgroundColor: '#a0a0db' } : { backgroundColor: '#637330' }}>
                             <Form noValidate validated={validated} onSubmit={handleSubmit}>
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Label>Client</Form.Label>
+                                    <Form.Label className="mandatory">Client</Form.Label>
                                     <Form.Select required name='client' value={details.client} onChange={onChangeForm} aria-label="Default select example">
                                         <option value="mass">MassMutual</option>
                                         <option value="mmbu">MMBU</option>
@@ -38,21 +38,21 @@ const DetailsForm = () => {
                                     </Form.Select>
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                                    <Form.Label>name</Form.Label>
+                                    <Form.Label className="mandatory">name</Form.Label>
                                     <Form.Control required name='name' onChange={onChangeForm} value={details.name} placeholder="Enter Name" />
                                 </Form.Group>
                                 {details.client == 'jebit' ? '' :
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                                        <Form.Label>Contact number</Form.Label>
+                                        <Form.Label className= { details.client == 'mmbu' ?  "" : 'mandatory' }>Contact number</Form.Label>
                                         <Form.Control name='contact' onChange={onChangeForm} required={details.client == 'mmbu' ? false : true} value={details.contact} type="number" placeholder="Enter email" />
                                     </Form.Group>
                                 }
                                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                                    <Form.Label>Email adress</Form.Label>
+                                    <Form.Label className="mandatory">Email adress</Form.Label>
                                     <Form.Control required name='email' onChange={onChangeForm} value={details.email} type="email" placeholder="Email" />
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                                    <Form.Label>adress</Form.Label>
+                                    <Form.Label className="mandatory">adress</Form.Label>
                                     <Form.Control required name='address' onChange={onChangeForm} value={details.address} placeholder="adress" />
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="formBasicCheckbox">

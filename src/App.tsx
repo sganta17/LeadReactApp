@@ -1,9 +1,11 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DetailsForm from './forms/DetailsForm';
+import Header from './components/Header';
 function App() {
   return (
     <div>
+      <Header/>
       <DetailsForm/>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

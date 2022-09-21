@@ -6,3 +6,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+.mandatory::after  {
+content: "*";
+color: red
+}
