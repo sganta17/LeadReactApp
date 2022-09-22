@@ -9,5 +9,23 @@
 
 .mandatory::after  {
 content: "*";
-color: red
+color: red;
+}
+
+.headerRow {
+  color: #fff;
+  background: #002f6c;
+}
+
+.headerCol {
+  padding: 0px 0px 20px 0px;
+}
+
+.navLogo {
+  margin: 10px 0px 0px 20px;
+}
+
+.navText {
+  float: right;
+  margin: -20px 20px 0px 0px
 }

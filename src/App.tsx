@@ -4,8 +4,8 @@ import DetailsForm from './forms/DetailsForm';
 import Header from './components/Header';
 function App() {
   return (
-    <div>
-      <Header/>
+    <div style={{ overflowX: 'hidden', height: '100vh'}}>
+      {/* <Header/> */}
       <DetailsForm/>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
