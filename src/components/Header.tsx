@@ -17,6 +17,10 @@ const Header = () => {
             </div>
           </Col>
         </Row>
+
+        {/* <iframe  src="../forms/DetailsForm.tsx">
+       
+        </iframe> */}
       </>
   )
 }
